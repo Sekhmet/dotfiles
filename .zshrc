@@ -60,7 +60,7 @@ alias dfp='df push origin master'
 alias ss='. ~/.zshrc'
 alias v='vim'
 alias vv='vim ~/.vimrc'
-alias vb='vim ~/.zshrc'
+alias vs='vim ~/.zshrc'
 alias y='yarn'
 alias yy='yarn && yarn deps:install'
 
