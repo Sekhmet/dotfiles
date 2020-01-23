@@ -51,8 +51,8 @@ precmd() {
 	fi
 }
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-dotfiles config --local status.showUntrackedFiles no
+alias df='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+df config --local status.showUntrackedFiles no
 
 alias ss='. ~/.zshrc'
 alias v='vim'
