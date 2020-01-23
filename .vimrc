@@ -22,6 +22,7 @@ colorscheme base16-eighties
 syntax on
 set number
 set relativenumber
+set cursorline
 
 " Plugins
 let g:prettier#autoformat = 0
