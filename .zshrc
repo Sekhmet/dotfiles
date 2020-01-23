@@ -53,6 +53,7 @@ precmd() {
 
 alias df='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 df config --local status.showUntrackedFiles no
+alias dfp='df push origin master'
 
 alias ss='. ~/.zshrc'
 alias v='vim'
