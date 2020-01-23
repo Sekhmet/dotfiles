@@ -2,11 +2,15 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.fzf
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'chriskempson/base16-vim'
+
+Plugin 'junegunn/fzf.vim'
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript'] }
@@ -27,4 +31,7 @@ set cursorline
 " Plugins
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js Prettier
+
+" Mappings
+map <C-p> :FZF<CR>
 
