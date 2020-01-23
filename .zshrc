@@ -7,8 +7,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -33,34 +31,10 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
-function setup_docker {
-	docker-machine start
-	eval $(docker-machine env default)
-}
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-precmd() {
-	return
-	if [[ "$PWD" != "$PREV_PWD" ]]; then
-		[[ -f ".nvmrc" ]] || return
-		
-		grep `nvm version | sed 's/v//'` .nvmrc
+[ -f ~/.aliases ] && . ~/.aliases
+[ -f ~/.funcs ] && . ~/.funcs
 
-		if [[ $? -neq 0 ]]; then
-			nvm use
-		fi
-
-		PREV_PWD="$PWD"
-	fi
-}
-
-alias df='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 df config --local status.showUntrackedFiles no
-alias dfp='df push origin master'
-
-alias ss='. ~/.zshrc'
-alias v='vim'
-alias vv='vim ~/.vimrc'
-alias vs='vim ~/.zshrc'
-alias y='yarn'
-alias yy='yarn && yarn deps:install'
 
