@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'chriskempson/base16-vim'
 
+Plugin 'preservim/nerdtree'
 Plugin 'junegunn/fzf.vim'
 
 Plugin 'pangloss/vim-javascript'
@@ -33,5 +34,5 @@ let g:prettier#autoformat = 0
 autocmd BufWritePre *.js Prettier
 
 " Mappings
-map <C-p> :FZF<CR>
-
+map <C-n> :NERDTreeToggle<CR>
+map <C-p> :GFiles<CR>
