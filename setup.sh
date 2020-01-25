@@ -9,7 +9,7 @@ if [[ -d "$FZF_DIR" ]]; then
 	echo "fzf is already installed"
 else
 	echo "Installing fzf"
-	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+	git clone --depth 1 https://github.com/junegunn/fzf.git "$FZF_DIR"
 	~/.fzf/install --key-bindings --completion --no-update-rc
 fi
 
@@ -30,7 +30,7 @@ if [[ -d "$VUNDLE_DIR" ]]; then
 	echo "Vundle is already installed"
 else
 	echo "Installing Vundle and plugins"
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	git clone https://github.com/VundleVim/Vundle.vim.git "$VUNDLE_DIR"
 	vim -c :PluginInstall
 fi
 
