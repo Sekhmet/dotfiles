@@ -1,5 +1,12 @@
 #!/usr/bin/env zsh
 
+case `uname` in
+	Darwin)
+		echo Installing macOS deps
+		brew install wget
+	;;
+esac
+
 OH_MY_ZSH_DIR=~/.oh-my-zsh
 BASE16_SHELL_DIR=~/.config/base16-shell
 FZF_DIR=~/.fzf
@@ -16,7 +23,7 @@ fi
 if [[ -d "$OH_MY_ZSH_DIR" ]]; then
 	echo "oh-my-zsh is already installed"
 else
-	sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
 if [[ -d "$BASE16_SHELL_DIR" ]]; then
