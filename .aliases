@@ -6,5 +6,5 @@ alias v='vim'
 alias vv='vim ~/.vimrc'
 alias vs='vim ~/.zshrc'
 alias y='yarn'
-alias yy='yarn && yarn deps:install'
+alias yy='yarn deps:install'
 
