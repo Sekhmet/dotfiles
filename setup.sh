@@ -3,7 +3,7 @@
 case `uname` in
 	Darwin)
 		echo Installing macOS deps
-		brew install wget
+		brew install wget gpg2 gnupg pinentry-mac
 	;;
 esac
 

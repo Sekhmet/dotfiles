@@ -1,4 +1,5 @@
 export LC_ALL=en_US.UTF-8
+export GPG_TTY=`tty`
 
 export ZSH="/Users/sekhmet/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
