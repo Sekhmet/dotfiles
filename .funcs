@@ -5,18 +5,3 @@ function setup_docker {
 	eval $(docker-machine env default)
 }
 
-precmd() {
-	return
-	if [[ "$PWD" != "$PREV_PWD" ]]; then
-		[[ -f ".nvmrc" ]] || return
-		
-		grep `nvm version | sed 's/v//'` .nvmrc
-
-		if [[ $? -neq 0 ]]; then
-			nvm use
-		fi
-
-		PREV_PWD="$PWD"
-	fi
-}
-
