@@ -11,4 +11,3 @@ alias vv='vim ~/.vimrc'
 alias vs='vim ~/.zshrc'
 alias y='yarn'
 alias yy='yarn deps:install'
-

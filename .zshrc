@@ -30,4 +30,3 @@ for f in ~/.{aliases,funcs,path}; do
 done
 
 df config --local status.showUntrackedFiles no
-
