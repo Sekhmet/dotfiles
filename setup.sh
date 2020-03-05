@@ -7,7 +7,7 @@ case $(uname) in
 	;;
 	Linux)
 		echo Installing Linux deps
-		sudo apt install -y curl vim xsel gnupg2 pinentry-curses
+		sudo apt install -y zsh curl vim xsel gnupg2 pinentry-curses
 	;;
 esac
 
