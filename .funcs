@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 function setup_docker {
 	docker-machine start
 	eval $(docker-machine env default)
