@@ -28,8 +28,6 @@ syntax on
 set number
 set relativenumber
 set cursorline
-set list
-set listchars=trail:~
 
 " Plugins
 let g:prettier#autoformat = 0
