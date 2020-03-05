@@ -3,7 +3,7 @@
 alias df='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dfp='df push origin master'
 
-alias sc='shellcheck setup.sh .aliases .funcs .path'
+alias sc='shellcheck install.sh .aliases .funcs .path'
 
 alias ss='. ~/.zshrc'
 alias v='vim'
