@@ -1,0 +1,7 @@
+[user]
+	signingkey = ACA5A8F1B5943E9F
+	email = wiktor.tkaczynski@gmail.com
+	name = Wiktor Tkaczyński
+[commit]
+	gpgsign = true
+
