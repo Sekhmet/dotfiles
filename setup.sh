@@ -5,6 +5,10 @@ case `uname` in
 		echo Installing macOS deps
 		brew install wget gpg2 gnupg pinentry-mac
 	;;
+	Linux)
+		echo Installing Linux deps
+		sudo apt install -y curl vim xsel gnupg2 pinentry-curses
+	;;
 esac
 
 OH_MY_ZSH_DIR=~/.oh-my-zsh
