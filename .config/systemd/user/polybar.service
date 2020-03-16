@@ -5,6 +5,7 @@ After=graphical-session.target
 
 [Service]
 ExecStart=/usr/local/bin/polybar main
+ExecReload=/usr/local/bin/polybar-msg cmd restart
 
 [Install]
 WantedBy=graphical.target
