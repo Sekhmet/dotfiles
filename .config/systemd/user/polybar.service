@@ -1,0 +1,10 @@
+[Unit]
+Description=Polybar
+BindsTo=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/local/bin/polybar main
+
+[Install]
+WantedBy=graphical.target
