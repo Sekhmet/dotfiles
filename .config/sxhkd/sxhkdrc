@@ -1,2 +1,8 @@
+XF86AudioMute
+  pactl set-sink-mute $(pactl info | grep "Default Sink" | cut -d " " -f3) toggle
+
+XF86Audio{Raise,Lower}Volume
+  pactl set-sink-volume $(pactl info | grep "Default Sink" | cut -d " " -f3) {+,-}10%
+
 super + shift + s
   maim -s | xclip -selection clipboard -t image/png
