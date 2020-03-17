@@ -6,7 +6,7 @@ BASE16_SHELL_DIR=~/.config/base16-shell
 VUNDLE_DIR=~/.vim/bundle/Vundle.vim
 
 base() {
-	sudo apt install -y zsh curl vim xsel gnupg2 pinentry-curses shellcheck sxhkd maim rofi
+	sudo apt install -y zsh curl vim xsel gnupg2 pinentry-curses shellcheck sxhkd maim rofi openbox obmenu obconf feh
 
 	fzf
 	oh-my-zsh
