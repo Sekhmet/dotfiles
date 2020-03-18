@@ -4,8 +4,8 @@ XF86AudioMute
 XF86Audio{Raise,Lower}Volume
   pactl set-sink-volume $(pactl info | grep "Default Sink" | cut -d " " -f3) {+,-}10%
 
-super + space
+super + d
   rofi -modi window,drun,ssh,combi -show combi -theme Monokai
 
-super + shift + s
+super + o
   maim -s | xclip -selection clipboard -t image/png
