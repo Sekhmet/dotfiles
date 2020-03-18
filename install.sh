@@ -8,10 +8,16 @@ VUNDLE_DIR=~/.vim/bundle/Vundle.vim
 base() {
 	sudo apt install -y zsh curl vim xsel gnupg2 pinentry-curses shellcheck sxhkd maim rofi feh x11-xserver-utils
 
+	i3
+
 	fzf
 	oh-my-zsh
 	base16
 	vundle
+}
+
+i3() {
+	sudo apt install -y i3
 }
 
 fzf() {
