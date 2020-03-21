@@ -119,4 +119,4 @@ exec ~/.screenlayout/laptop.sh
 exec ~/.fehbg
 exec sxhkd
 exec compton
-exec polybar main
+exec ~/.scripts/polybar.sh
