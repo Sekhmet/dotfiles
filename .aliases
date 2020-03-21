@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-alias df='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dfp='df push origin master'
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias sc='shellcheck install.sh .aliases .funcs .path'
 

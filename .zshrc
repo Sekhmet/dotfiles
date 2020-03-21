@@ -29,4 +29,4 @@ for f in ~/.{aliases,funcs,path}; do
 	fi
 done
 
-df config --local status.showUntrackedFiles no
+dot config --local status.showUntrackedFiles no
