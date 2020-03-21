@@ -20,7 +20,7 @@ base() {
 }
 
 i3() {
-	sudo apt install -y i3-gaps
+	sudo apt install -y i3-gaps compton polybar
 }
 
 playerctl() {
