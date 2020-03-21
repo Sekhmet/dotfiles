@@ -6,9 +6,12 @@ BASE16_SHELL_DIR=~/.config/base16-shell
 VUNDLE_DIR=~/.vim/bundle/Vundle.vim
 
 base() {
+	sudo add-apt-repository -y ppa:kgilmer/speed-ricer
+
 	sudo apt install -y zsh curl vim xsel gnupg2 pinentry-curses shellcheck sxhkd maim rofi feh x11-xserver-utils
 
 	i3
+	playerctl
 
 	fzf
 	oh-my-zsh
@@ -17,7 +20,11 @@ base() {
 }
 
 i3() {
-	sudo apt install -y i3 i3blocks
+	sudo apt install -y i3-gaps
+}
+
+playerctl() {
+	sudo apt install -y playerctl
 }
 
 fzf() {

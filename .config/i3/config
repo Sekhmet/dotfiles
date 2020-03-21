@@ -1,5 +1,9 @@
 font pango:monospace 10
 
+# i3-gaps
+for_window [class=".*"] border pixel 0
+gaps inner 16
+
 set $up l
 set $down k
 set $left j
