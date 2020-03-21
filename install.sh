@@ -21,6 +21,13 @@ base() {
 
 i3() {
 	sudo apt install -y i3-gaps compton polybar
+
+	# Fonts
+	git clone https://github.com/stark/siji /tmp/siji
+	cd /tmp/siji
+	./install.sh -d ~/.fonts
+	cd -
+	sudo rm /etc/fonts/conf.d/70-no-bitmaps.conf && fc-cache
 }
 
 playerctl() {
