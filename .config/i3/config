@@ -111,6 +111,10 @@ bar {
         position top
 }
 
+for_window [title="^Android Emulator -"] floating enable
+
+assign [class="google-chrome"] $workspace1
+assign [class="Code"] $workspace2
 
 exec ~/.screenlayout/laptop.sh
 exec ~/.fehbg
