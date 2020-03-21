@@ -1,4 +1,4 @@
-font pango:monospace 8
+font pango:monospace 10
 
 set $up l
 set $down k
@@ -58,10 +58,10 @@ bindsym $mod+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
 
-set $workspace1 "1: Code"
-set $workspace2 "2: Web"
-set $workspace3 "3: Terminals"
-set $workspace4 "4: Messages"
+set $workspace1 "1:  Web"
+set $workspace2 "2:  Code"
+set $workspace3 "3:  Terminals"
+set $workspace4 "4:  Messages"
 
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2

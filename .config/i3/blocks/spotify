@@ -1,0 +1,9 @@
+#!/bin/bash
+
+WINDOW_ID=$(xdotool search --class "Spotify" | tail -n 1)
+
+SONG=$(xprop -id $WINDOW_ID | grep "WM_NAME(STRING)" | awk -F'"' '{ print $2 }')
+
+[[ -z "$SONG" ]] || [[ "$SONG" == "Spotify"* ]] && exit 1
+
+echo $SONG
