@@ -8,30 +8,11 @@ VUNDLE_DIR=~/.vim/bundle/Vundle.vim
 base() {
 	sudo add-apt-repository -y ppa:kgilmer/speed-ricer
 
-	sudo apt install -y zsh curl vim xsel gnupg2 pinentry-curses shellcheck sxhkd maim rofi feh x11-xserver-utils
-
-	i3
-	playerctl
-
+	sudo apt install -y zsh curl vim xsel gnupg2 pinentry-curses shellcheck
 	fzf
 	oh-my-zsh
 	base16
 	vundle
-}
-
-i3() {
-	sudo apt install -y i3-gaps compton polybar
-
-	# Fonts
-	git clone https://github.com/stark/siji /tmp/siji
-	cd /tmp/siji
-	./install.sh -d ~/.fonts
-	cd -
-	sudo rm /etc/fonts/conf.d/70-no-bitmaps.conf && fc-cache
-}
-
-playerctl() {
-	sudo apt install -y playerctl
 }
 
 fzf() {
