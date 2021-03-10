@@ -124,3 +124,6 @@ export PATH=$PATH:$HOME/Workspace/flutter/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
+
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dot config --local status.showUntrackedFiles no
