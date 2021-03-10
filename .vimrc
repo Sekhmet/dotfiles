@@ -1,10 +1,10 @@
 call plug#begin()
 
-Plug 'pangloss/vim-javascript'
-Plug 'chriskempson/base16-vim'
-
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'chriskempson/base16-vim'
+
+Plug 'pangloss/vim-javascript'
 Plug 'dense-analysis/ale'
 
 call plug#end()
