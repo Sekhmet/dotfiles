@@ -22,7 +22,6 @@ set expandtab
 
 set number
 set hlsearch
-set colorcolumn=80,100,120
 
 " Keys
 nnoremap <C-p> :FZF<CR>
