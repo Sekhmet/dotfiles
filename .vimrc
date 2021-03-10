@@ -1,38 +1,32 @@
-set nocompatible
-filetype off
+call plug#begin()
 
-set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=~/.fzf
+Plug 'pangloss/vim-javascript'
+Plug 'chriskempson/base16-vim'
 
-call vundle#begin()
+Plug '~/.fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'chriskempson/base16-vim'
+call plug#end()
 
-Plugin 'preservim/nerdtree'
-Plugin 'junegunn/fzf.vim'
+filetype plugin on
 
-Plugin 'pangloss/vim-javascript'
-Plugin 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript'] }
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" Colors
-let base16colorspace=256
-colorscheme base16-eighties
-
-" Basic config
+" Looks
 syntax on
+let base16colorspace=256
+colorscheme base16-default-dark
+
 set number
-set relativenumber
-set cursorline
+set hlsearch
+set colorcolumn=80,100,120
 
-" Plugins
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js Prettier
+" Keys
+nnoremap <C-p> :FZF<CR>
+nnoremap <C-o> :Buffers<CR>
 
-" Mappings
-map <C-n> :NERDTreeToggle<CR>
-map <C-p> :GFiles<CR>
+nnoremap <S-j> :m .+1<CR>==
+nnoremap <S-k> :m .-2<CR>==
+
+" JavaScript
+let g:ale_fixers = {'javascript': ['prettier']}
+let g:ale_fix_on_save = 1
