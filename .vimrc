@@ -24,6 +24,7 @@ set number
 set hlsearch
 
 " Keys
+nnoremap <silent> <leader><leader> :nohl<CR>
 nnoremap <C-p> :FZF<CR>
 nnoremap <C-o> :Buffers<CR>
 
