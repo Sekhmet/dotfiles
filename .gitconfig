@@ -4,3 +4,7 @@
 	name = Wiktor Tkaczyński
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = master
+[pull]
+	rebase = true
