@@ -16,6 +16,10 @@ syntax on
 let base16colorspace=256
 colorscheme base16-default-dark
 
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 set number
 set hlsearch
 set colorcolumn=80,100,120
