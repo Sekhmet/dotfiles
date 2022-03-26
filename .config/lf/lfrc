@@ -1,0 +1,4 @@
+set previewer '~/.config/lf/preview.sh'
+
+map . set hidden!
+map d delete

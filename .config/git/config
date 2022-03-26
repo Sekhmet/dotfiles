@@ -1,10 +1,10 @@
 [user]
-	signingkey = ACA5A8F1B5943E9F
 	email = wiktor.tkaczynski@gmail.com
 	name = Wiktor Tkaczyński
+	signingkey = ACA5A8F1B5943E9F
 [commit]
 	gpgsign = true
-[init]
-	defaultBranch = master
 [pull]
 	rebase = true
+[init]
+	defaultBranch = master
