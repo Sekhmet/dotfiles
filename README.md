@@ -3,15 +3,15 @@
 ### Setup on a fresh device
 ```bash
 # Requirements
-sudo apt install git
+sudo pacman -Syu git
+
+mv ~/.zshrc ~/.zshrc.bak
 
 git clone --bare git@github.com:Sekhmet/dotfiles.git $HOME/.dotfiles
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dot checkout
 
-# Install base tools
-./install.sh base
+rm ~/.zshrc.bak
 
-# Initialize new dotfiles
 source ~/.zshrc
 ```
