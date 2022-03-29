@@ -8,3 +8,5 @@
 	rebase = true
 [init]
 	defaultBranch = master
+[gpg]
+	program = /home/sekhmet/.local/bin/gpg
