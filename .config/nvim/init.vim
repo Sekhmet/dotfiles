@@ -2,6 +2,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'sainnhe/everforest'
 Plug 'tpope/vim-sleuth'
+Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'nvim-lua/plenary.nvim'
