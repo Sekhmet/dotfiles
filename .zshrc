@@ -48,3 +48,14 @@ export HISTFILE="$XDG_STATE_HOME"/zsh/history
 alias dot="/usr/bin/git --git-dir=$XDG_DATA_HOME/dotfiles --work-tree=$HOME"
 dot config --local status.showUntrackedFiles no
 
+# Tweaks
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
