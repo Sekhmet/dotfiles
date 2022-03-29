@@ -19,10 +19,12 @@ set number
 set relativenumber
 
 set colorcolumn=80,100,120
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
 
 nnoremap <C-p> <cmd>Telescope git_files<CR>
 nnoremap <C-f> <cmd>Telescope live_grep<CR>
 nnoremap <leader>g :0G<CR>
+nnoremap <leader>. :set list!<CR>
 
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
