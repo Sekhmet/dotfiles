@@ -1,0 +1,6 @@
+window:
+  dimensions:
+    columns: 120
+    lines: 30
+
+  opacity: 0.9
