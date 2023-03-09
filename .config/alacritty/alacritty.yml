@@ -2,5 +2,7 @@ window:
   dimensions:
     columns: 120
     lines: 30
-
+  padding:
+    x: 16
+    y: 16
   opacity: 0.9
