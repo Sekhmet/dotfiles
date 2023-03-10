@@ -58,4 +58,13 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
-bindkey -s '^o' 'lfcd\n'
+
+dcd () {
+    WORK_DIR=~/Workspace
+    dest=$(find "$WORK_DIR" -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | rofi -dmenu -p "Repo")
+    [ "$?" -eq 1 ] && return 0
+
+    cd "$WORK_DIR/$dest"
+}
+
+bindkey -s '^o' 'dcd\n'
