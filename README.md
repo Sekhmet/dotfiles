@@ -3,7 +3,7 @@
 ### Setup on a fresh device
 ```bash
 # Requirements
-sudo pacman -Syu git bspwm sxhkd feh picom rofi polybar
+sudo pacman -Syu git bspwm sxhkd feh picom rofi polybar maim
 
 mv ~/.zshrc ~/.zshrc.bak
 
