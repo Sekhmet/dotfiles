@@ -1,0 +1,22 @@
+#!/bin/sh
+
+export SUDO_ASKPASS=~/.local/bin/askpass.sh
+
+option=$(echo "Connect VPN|Disconnect VPN|Mount SMB|Unmount SMB" | rofi -dmenu -sep "|" -i -p "CtrlP")
+[ "$?" -eq 1 ] && return 0
+
+
+case "$option" in
+  "Connect VPN")
+    sudo -A wg-quick up homelab-wg
+    ;;
+  "Disconnect VPN")
+    sudo -A wg-quick down homelab-wg
+    ;;
+  "Mount SMB")
+    sudo -A mount -t cifs //192.168.100.101/sekhmet-smb /mnt/samba -o credentials=/etc/samba/credentials/sekhmet,uid=sekhmet,gid=sekhmet
+    ;;
+  "Unmount SMB")
+    sudo -A umount /mnt/samba
+    ;;
+esac
