@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export SUDO_ASKPASS=~/.local/bin/askpass.sh
+export SUDO_ASKPASS=~/.local/bin/askpass
 
 option=$(echo "Connect VPN|Disconnect VPN|Mount SMB|Unmount SMB" | rofi -dmenu -sep "|" -i -p "CtrlP")
 [ "$?" -eq 1 ] && return 0
