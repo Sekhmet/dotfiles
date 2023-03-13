@@ -5,6 +5,7 @@ xrdb -merge ~/.Xresources
 
 picom &
 polybar &
+dunst &
 ./.fehbg &
 sxhkd &
 exec bspwm
