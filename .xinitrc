@@ -1,7 +1,8 @@
 xsetroot -cursor_name left_ptr
-setxkbmap pl
 
 xrdb -merge ~/.Xresources
+
+setxkbmap pl
 
 picom &
 polybar &
