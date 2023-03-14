@@ -2,11 +2,17 @@
 
 export SUDO_ASKPASS=~/.local/bin/askpass
 
-option=$(echo "Connect VPN|Disconnect VPN|Mount SMB|Unmount SMB" | rofi -dmenu -sep "|" -i -p "CtrlP")
+option=$(echo "Headphones: A2DP|Headphones: HSP|Connect VPN|Disconnect VPN|Mount SMB|Unmount SMB" | rofi -dmenu -sep "|" -i -p "CtrlP")
 [ "$?" -eq 1 ] && return 0
 
 
 case "$option" in
+  "Headphones: A2DP")
+    pactl set-card-profile bluez_card.60_AB_D2_3A_EC_B7 a2dp-sink
+    ;;
+  "Headphones: HSP")
+    pactl set-card-profile bluez_card.60_AB_D2_3A_EC_B7 headset-head-unit
+    ;;
   "Connect VPN")
     sudo -A wg-quick up homelab-wg
     ;;
