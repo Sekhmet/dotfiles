@@ -20,8 +20,6 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.colorcolumn = { 80, 100, 120 }
-vim.opt.list = true
-vim.opt.listchars = { trail = "•" }
 
 vim.opt.scrolloff = 8
 
