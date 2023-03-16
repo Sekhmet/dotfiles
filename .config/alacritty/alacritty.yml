@@ -3,6 +3,6 @@ window:
     columns: 120
     lines: 30
   padding:
-    x: 16
-    y: 16
+    x: 8
+    y: 8
   opacity: 0.5
