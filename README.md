@@ -3,7 +3,7 @@
 ### Setup on a fresh device
 ```bash
 # Requirements
-sudo pacman -Syu git xorg-xsetroot bspwm sxhkd feh picom rofi polybar maim dunst
+sudo pacman -Syu git xorg-xsetroot bspwm sxhkd feh picom rofi polybar maim dunst udiskie udisks2
 
 mv ~/.zshrc ~/.zshrc.bak
 

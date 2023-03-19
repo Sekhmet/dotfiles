@@ -6,6 +6,7 @@ setxkbmap pl
 
 picom &
 polybar &
+udiskie &
 dunst &
 ./.fehbg &
 sxhkd &
