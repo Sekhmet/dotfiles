@@ -50,6 +50,11 @@ alias dot="/usr/bin/git --git-dir=$XDG_DATA_HOME/dotfiles --work-tree=$HOME"
 dot config --local status.showUntrackedFiles no
 
 # Tweaks
+export FZF_DEFAULT_COMMAND='rg --files'
+export FZF_CTRL_T_COMMAND='rg --files'
+export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+[ -f "/usr/share/fzf/key-bindings.zsh" ] && source /usr/share/fzf/key-bindings.zsh
+
 lfcd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
@@ -62,7 +67,7 @@ lfcd () {
 
 dcd () {
     WORK_DIR=~/Workspace
-    dest=$(find "$WORK_DIR" -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | rofi -dmenu -p "Repo")
+    dest=$(find "$WORK_DIR" -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | fzf)
     [ "$?" -eq 1 ] && return 0
 
     cd "$WORK_DIR/$dest"

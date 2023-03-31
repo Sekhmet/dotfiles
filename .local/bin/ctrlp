@@ -2,7 +2,7 @@
 
 export SUDO_ASKPASS=~/.local/bin/askpass
 
-option=$(echo "Headphones: A2DP|Headphones: HSP|Connect VPN|Disconnect VPN|Mount SMB|Unmount SMB" | rofi -dmenu -sep "|" -i -p "CtrlP")
+option=$(printf "Headphones: A2DP\nHeadphones: HSP\nConnect VPN\nDisconnect VPN\nMount SMB\nUnmount SMB" | fuzzel -d -i -p "CtrlP ")
 [ "$?" -eq 1 ] && return 0
 
 

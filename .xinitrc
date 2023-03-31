@@ -11,5 +11,3 @@ dunst &
 ./.fehbg &
 sxhkd &
 exec bspwm
-
-
