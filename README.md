@@ -6,7 +6,7 @@
 sudo pacman -Syu git xorg-xsetroot bspwm sxhkd feh picom rofi polybar maim dunst udiskie udisks2
 
 # sway
-sudo pacman -Syu git sway swaybg swaylock fuzzel waybar dunst udiskie udisks2
+sudo pacman -Syu git sway swaybg swaylock fuzzel waybar dunst udiskie udisks2 ttf-font-awesome
 
 mv ~/.zshrc ~/.zshrc.bak
 
