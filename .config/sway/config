@@ -30,7 +30,8 @@ input type:keyboard {
 }
 
 input type:touchpad {
-    events disabled
+    natural_scroll enabled
+    scroll_factor 0.25
 }
 
 floating_modifier $mod normal
