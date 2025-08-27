@@ -22,6 +22,7 @@
 	  pkgs.gnupg
 	  pkgs.htop
 	  pkgs.ripgrep
+	  pkgs.jq
 	  pkgs.go
 	  pkgs.yt-dlp
 	  pkgs.git

@@ -25,9 +25,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Starkli
 . "/Users/sekhmet/.starkli/env"
 
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
-
 # Go
 export PATH="`go env GOPATH`/bin:$PATH"
 
