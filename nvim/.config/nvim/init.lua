@@ -10,7 +10,6 @@ vim.opt.foldenable = false
 vim.opt.foldlevelstart = 99
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.keymap.set("n", "<CR>", "za", { desc = "Toggle fold" })
 
 vim.diagnostic.config({ virtual_text = true })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics [Q]uickfix list" })
