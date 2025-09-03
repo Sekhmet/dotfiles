@@ -24,6 +24,7 @@
 	  pkgs.ripgrep
 	  pkgs.jq
 	  pkgs.go
+	  pkgs.postgresql
 	  pkgs.yt-dlp
 	  pkgs.git
 	  pkgs.gh
@@ -38,7 +39,6 @@
 	  pkgs.colima
 	  pkgs.doctl
 	  pkgs.kubectl
-	  pkgs.act
         ];
 
       system.primaryUser = "sekhmet";
