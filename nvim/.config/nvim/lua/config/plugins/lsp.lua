@@ -12,6 +12,8 @@ return {
 			vim.lsp.enable("vue_ls")
 			vim.lsp.enable("tailwindcss")
 
+			vim.lsp.enable("gopls")
+
 			local vue_language_server_path = vim.fn.expand("$MASON/packages")
 				.. "/vue-language-server"
 				.. "/node_modules/@vue/language-server"
