@@ -44,38 +44,6 @@ return {
 				},
 			})
 
-			--[[
-			require("mason-lspconfig").setup({
-				ensure_installed = { "vtsls", "volar", "eslint" },
-			})
-
-			lspconfig.eslint.setup({
-				settings = {
-					workingDirectories = { mode = "auto" },
-				},
-			})
-			lspconfig.vtsls.setup({
-				filetypes = { "typescript", "javascript", "vue" },
-				settings = {
-					vtsls = {
-						tsserver = {
-							globalPlugins = {
-								{
-									name = "@vue/typescript-plugin",
-									location = require("mason-registry")
-										.get_package("vue-language-server")
-										:get_install_path() .. "/node_modules/@vue/language-server",
-									languages = { "vue" },
-									configNamespace = "typescript",
-									enableForWorkspaceTypeScriptVersion = true,
-								},
-							},
-						},
-					},
-				},
-			})
-			]]
-
 			vim.keymap.set("n", "grn", vim.lsp.buf.rename, { desc = "[R]e[n]ame" })
 			vim.keymap.set("n", "grr", require("telescope.builtin").lsp_references, { desc = "[G]oto [R]eferences" })
 			vim.keymap.set(
