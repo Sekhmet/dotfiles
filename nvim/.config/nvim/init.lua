@@ -18,6 +18,9 @@ end)
 vim.diagnostic.config({ virtual_text = true })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics [Q]uickfix list" })
 
+-- Disable Ctrl+u in insert mode to avoid accidental deletions when trying to use Ctrl+y
+vim.keymap.set("i", "<C-u>", "<Nop>")
+
 -- Command height
 vim.opt.cmdheight = 0
 
