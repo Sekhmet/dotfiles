@@ -7,6 +7,7 @@ vim.opt.scrolloff = 8
 vim.opt.tabstop = 4
 
 vim.opt.foldenable = false
+vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
