@@ -5,7 +5,7 @@ return {
 		enabled = true,
 		config = function()
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = { "lua", "typescript", "html", "css", "json", "vue" },
+				ensure_installed = { "lua", "typescript", "html", "css", "json", "vue", "go" },
 				auto_install = false,
 				highlight = {
 					enable = true,
