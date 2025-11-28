@@ -7,6 +7,9 @@ return {
 			typescript = { "eslint_d" },
 			vue = { "eslint_d" },
 			markdown = { "prettierd" },
+			html = { "prettierd" },
+			css = { "prettierd" },
+			json = { "prettierd" },
 		},
 		default_format_opts = {
 			lsp_format = "fallback",

@@ -32,8 +32,6 @@ return {
 					"vue",
 					"typescriptreact",
 					"javascriptreact",
-					"json",
-					"markdown",
 				},
 				settings = {
 					vtsls = {
