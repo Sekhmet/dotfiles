@@ -24,6 +24,7 @@
 	  pkgs.ripgrep
 	  pkgs.jq
 	  pkgs.go
+	  pkgs.fnm
 	  pkgs.postgresql
 	  pkgs.yt-dlp
 	  pkgs.git
