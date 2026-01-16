@@ -20,6 +20,7 @@
 	  pkgs.neovim
 	  pkgs.tmux
 	  pkgs.gnupg
+	  pkgs.pinentry-tty
 	  pkgs.htop
 	  pkgs.ripgrep
 	  pkgs.jq
