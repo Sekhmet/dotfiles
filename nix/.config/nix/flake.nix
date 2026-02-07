@@ -53,6 +53,9 @@
       system.keyboard = {
 	enableKeyMapping = true;
         remapCapsLockToControl = true;
+        nonUS = {
+          remapTilde = true;
+        };
       };
 
       # Necessary for using flakes on this system.
