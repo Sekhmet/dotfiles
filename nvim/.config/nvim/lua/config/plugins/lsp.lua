@@ -13,6 +13,7 @@ return {
 			vim.lsp.enable("tailwindcss")
 
 			vim.lsp.enable("gopls")
+			vim.lsp.enable("rust_analyzer")
 			vim.lsp.enable("solidity_ls_nomicfoundation")
 
 			local vue_language_server_path = vim.fn.expand("$MASON/packages")
