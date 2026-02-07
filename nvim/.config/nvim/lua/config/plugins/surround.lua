@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("mini.surround").setup({
 			mappings = {
-				add = "ys", -- Add surrounding in Normal and Visual modes
+				add = "ss", -- Add surrounding in Normal and Visual modes
 				delete = "ds", -- Delete surrounding
 				replace = "cs", -- Replace surrounding
 			},
