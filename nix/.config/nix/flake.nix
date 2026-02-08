@@ -47,6 +47,8 @@
 
       system.defaults = {
         dock.autohide = true;
+        dock.mru-spaces = false;
+        dock.show-recents = false;
       	finder.FXPreferredViewStyle = "clmv";
       };
 
