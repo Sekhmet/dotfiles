@@ -35,6 +35,8 @@
 	  pkgs.iina
 	  pkgs.transmission_4
 	  pkgs.net-news-wire
+	  pkgs.bun
+	  pkgs.hugo
 	  pkgs.fastfetch
 	  pkgs.ffmpeg
 	  pkgs.docker
