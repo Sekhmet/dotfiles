@@ -18,6 +18,10 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	spec = {
 		{ import = "config.plugins" },
+		{
+			"esmuellert/codediff.nvim",
+			cmd = "CodeDiff",
+		},
 		{ "tpope/vim-sleuth" },
 	},
 })
