@@ -1,11 +1,26 @@
+local function use_biome()
+	return vim.fs.find({ "biome.json", "biome.jsonc" }, {
+		upward = true,
+		path = vim.fn.expand("%:p:h"),
+	})[1] ~= nil
+end
+
+local function web_formatter()
+	if use_biome() then
+		return { "biome-check" }
+	end
+
+	return { "eslint_d" }
+end
+
 return {
 	"stevearc/conform.nvim",
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },
-			javascript = { "eslint_d" },
-			typescript = { "eslint_d" },
-			vue = { "eslint_d" },
+			javascript = web_formatter,
+			typescript = web_formatter,
+			vue = web_formatter,
 			markdown = { "prettierd" },
 			html = { "prettierd" },
 			css = { "prettierd" },
