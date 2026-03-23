@@ -20,6 +20,8 @@ return {
 			lua = { "stylua" },
 			javascript = web_formatter,
 			typescript = web_formatter,
+			javascriptreadt = web_formatter,
+			typescriptreact = web_formatter,
 			vue = web_formatter,
 			markdown = { "prettierd" },
 			html = { "prettierd" },
