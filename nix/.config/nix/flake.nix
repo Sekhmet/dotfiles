@@ -17,8 +17,8 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ pkgs.stow
-	  pkgs.neovim
 	  pkgs.tmux
+	  pkgs.neovim
 	  pkgs.gnupg
 	  pkgs.pinentry-tty
 	  pkgs.htop
@@ -32,6 +32,7 @@
 	  pkgs.gh
 	  pkgs.bruno
 	  pkgs.obsidian
+	  pkgs.cloudflared
 	  pkgs.iina
 	  pkgs.transmission_4
 	  pkgs.net-news-wire
