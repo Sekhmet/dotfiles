@@ -13,6 +13,7 @@ export PATH="$PATH:$HOME/.local/bin"
 # Node
 eval "$(fnm env --use-on-cd --shell zsh)"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/Users/sekhmet/.bun/bin:$PATH"
 
 export PNPM_HOME="/Users/sekhmet/Library/pnpm"
 case ":$PATH:" in
@@ -27,8 +28,7 @@ export PATH="`go env GOPATH`/bin:$PATH"
 alias gh_tack="gh pr review -ab \"tACK\""
 alias gh_merge="gh pr merge -s"
 
-alias d='yarn dev:interactive'
-alias claude="$HOME/.claude/local/claude"
+alias d='bun run dev:interactive'
 
 function starkli_env() {
   [ -s "$HOME/.starkli/env" ] && source "/Users/sekhmet/.starkli/env"
