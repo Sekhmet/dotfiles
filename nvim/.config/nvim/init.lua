@@ -121,7 +121,12 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Telescope
 local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<C-p>", builtin.find_files, { desc = "Telescope find files" })
+-- find_files respects .gitignore; append gitignored .env* files so they stay reachable
+vim.keymap.set("n", "<C-p>", function()
+	builtin.find_files({
+		find_command = { "sh", "-c", "{ rg --files; rg --files -g '.env*'; } | awk '!seen[$0]++'" },
+	})
+end, { desc = "Telescope find files" })
 vim.keymap.set("n", "<C-f>", builtin.live_grep, { desc = "Telescope live grep" })
 
 -- Git link
