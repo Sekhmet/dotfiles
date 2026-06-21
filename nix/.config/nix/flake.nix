@@ -46,6 +46,10 @@
 	  pkgs.kubectl
         ];
 
+      environment.variables = {
+	  EDITOR = "nvim";
+      };
+
       system.primaryUser = "sekhmet";
 
       system.defaults = {
