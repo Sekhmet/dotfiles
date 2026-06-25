@@ -40,10 +40,12 @@
 	  pkgs.hugo
 	  pkgs.fastfetch
 	  pkgs.ffmpeg
-	  pkgs.docker
-	  pkgs.colima
 	  pkgs.doctl
+	  pkgs.colima
+	  pkgs.docker
+	  pkgs.dive
 	  pkgs.kubectl
+	  pkgs.kubernetes-helm
         ];
 
       environment.variables = {
