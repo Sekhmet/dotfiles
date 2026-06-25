@@ -65,7 +65,7 @@ vim.api.nvim_create_autocmd("PackChanged", {
 })
 
 -- Colorscheme
-require("catppuccin").setup({ flavour = "frappe" })
+require("catppuccin").setup({ flavour = "frappe", transparent_background = true })
 vim.cmd.colorscheme("catppuccin")
 
 -- Icons (shared by oil and statusline)
